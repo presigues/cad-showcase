@@ -1,3 +1,9 @@
+@font-face { font-family: pixel; src: url("Pixellettersfull-BnJ5.ttf"); }
+
 #model{
     transition-duration: 1s;
+}
+
+#text{
+    font-family: pixel;
 }

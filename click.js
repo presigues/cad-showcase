@@ -5,51 +5,43 @@ window.addEventListener('keypress', (event) =>{
     console.log(event)
     
     switch(event.key){
-      case 'd': // jump 
+      case 'e': // jump 
         console.log("e")
         
         document.getElementById('model1').setAttribute('rotation', {x: 0, y: rt = rt + 90, z: 0});
 
-        time = time + 1;
-
-        if(time == 1){
-        document.getElementById('model1').setAttribute('position', {x: 0, y: .4, z: -1});
+        if(time == 0){
+        document.getElementById('model1').setAttribute('position', {x: -.4, y: 0, z: -1});
 
         time = time + 1;
 }
-        if(time == 2){
+        if(time == 1){
         
         document.getElementById('model1').setAttribute('position', {x: -.4, y: 0, z: -1});
         time = time +1;
         }
 
-        if(time == 3){
+        if(time == 2){
         
             document.getElementById('model1').setAttribute('position', {x: .8, y: 0, z: -2});
             time = time +1;
             }
 
-            if(time == 4){
+            if(time == 3){
         
-                document.getElementById('model1').setAttribute('position', {x: -.4, y: 0, z: -1});
+                document.getElementById('model1').setAttribute('position', {x: -.4, y: 0, z: -2});
                 time = time + 1 ;
                 }
 
-                if(time == 5){
+                if(time == 4){
         
                     document.getElementById('model1').setAttribute('position', {x: 0, y: 0, z: -1});
-                    time = time - 5;
+                    time = time - 4;
                     }
     
         break;
 
-        case 'a': // jump 
-        console.log("e")
         
-        document.getElementById('model1').setAttribute('rotation', {x: 0, y: rt = rt + 90, z: 0});
-        document.getElementById('model1').setAttribute('position', {x: -.4, y: 0, z: -1});
-    
-        break;
 
     }
 
