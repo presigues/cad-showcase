@@ -13,9 +13,28 @@
 
         <a-scene>
 
-            <a-box position="0 .5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+            <a-camera position = "0 0 0"></a-camera>
+<a-assets>
 
-        </a-scene>
+    
+           <a-asset-item id="it1" src="models/Chassis Iteration 3.0.glb"></a-asset-item>
+</a-assets>
+
+<a-entity gltf-model="#it1", position="0 0 -1"></a-entity>
+
+<a-entity text="value: Chassis Iteration 3.0" position = ".15 0 -1"></a-entity>
+            
+        <a-sky color="#000206"></a-sky>
+</a-scene>
+
+       
+    
+        
+
+      
+
+
+        
       
     </body>
 </html>
